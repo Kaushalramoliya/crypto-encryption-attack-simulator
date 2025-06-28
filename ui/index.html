@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Crypto Encryption & Attack Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="app-icon">🔐</span>
+      <span class="app-title">SecureCrypt Console</span>
+    </div>
+    <ul class="nav-menu">
+      <li>File</li>
+      <li>Edit</li>
+      <li>View</li>
+      <li>Help</li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <!-- INPUT (left, grid-area 'input') -->
+    <section class="panel input-panel">
+      <header>
+        <h2>Input</h2>
+        <div class="file-selector">
+          <span class="icon">📄</span>
+          <select id="save-target">
+            <option value="plaintext.txt">plaintext.txt</option>
+            <option value="encrypt.txt">encrypt.txt</option>
+            <option value="decrypt.txt">decrypt.txt</option>
+            <option value="encrypt_Attack.txt">encrypt_Attack.txt</option>
+            <option value="decrypt_Attack.txt">decrypt_Attack.txt</option>
+          </select>
+          <button id="save-input" class="btn small">Save</button>
+        </div>
+      </header>
+      <textarea id="plaintext" placeholder="Type or paste your text…"></textarea>
+      <div class="controls">
+        <div class="algo-select">
+          <span class="icon">🔑</span>
+          <select id="algo">
+            <option>DES</option>
+            <option>AES</option>
+          </select>
+        </div>
+        <button id="run-all" class="btn">1.Run All</button>
+        <button id="encrypt" class="btn">2.Encrypt</button>
+        <button id="decrypt" class="btn">3.Decrypt</button>
+        <button id="attack" class="btn">4.Attack</button>
+        <button id="avalanche" class="btn">5.Avalanche</button>
+      </div>
+    </section>
+
+    <!-- OUTPUT LOG (right, grid-area 'output') -->
+    <section class="panel output-panel">
+      <header><h2>Output Log</h2></header>
+      <pre id="output" class="terminal">
+        <span class="hint">Your results will appear here…</span>
+      </pre>
+    </section>
+
+    <!-- FILE PREVIEWS (bottom, grid-area 'preview') -->
+    <section class="panel files-panel">
+      <header><h2>File Previews</h2></header>
+      <div class="file-cards">
+        <button data-target="plaintext.txt" class="card tab">plaintext.txt</button>
+        <button data-target="encrypt.txt" class="card tab">encrypt.txt</button>
+        <button data-target="decrypt.txt" class="card tab">decrypt.txt</button>
+        <button data-target="encrypt_Attack.txt" class="card tab">encrypt_Attack.txt</button>
+        <button data-target="decrypt_Attack.txt" class="card tab">decrypt_Attack.txt</button>
+      </div>
+      <pre id="tab-content" class="preview"></pre>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+
+
