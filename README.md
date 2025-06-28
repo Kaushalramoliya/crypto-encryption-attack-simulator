@@ -46,16 +46,64 @@ This project is designed to demonstrate the **core principles of Information Sec
 
 ## 🧰 Tech Stack
 
-| Layer | Tech |
-|-------|------|
-| 🧠 Backend | Java 11+ (javax.crypto, KeyGenerator, Cipher) |
-| 🖼 Frontend | HTML5 + CSS3 + Vanilla JavaScript |
-| 🎨 Styling | Fully custom dark theme + animated gradient backgrounds |
-| 🧩 JS API | Node.js APIs: `fs`, `child_process` (for Java execution) |
-| 📋 UX | Hover animations, scale transitions, terminal panels, file tabs |
-| ⚙️ Other | Live panel layout using CSS Grid, Flexbox, responsive media queries |
+| Layer       | Technology                                            |
+|-------------|--------------------------------------------------------|
+| 🧠 Backend  | Java 11+ (`javax.crypto`, `KeyGenerator`, `Cipher`)    |
+| 🖼 Frontend | HTML5 + CSS3 + Vanilla JavaScript                      |
+| 🎨 Styling  | Fully custom dark theme, animated background           |
+| ⚙️ Execution | Node.js (`fs`, `child_process`) to bridge to Java     |
+| 🧩 Layout   | CSS Grid, Flexbox, media queries for responsiveness     |
+| 💡 UX       | Hover effects, animations, preview tabs, and controls  |
 
 ---
 
-## 📁 Project Structure
+## 📁 File Descriptions
 
+| File Name              | Purpose                                                                 |
+|------------------------|-------------------------------------------------------------------------|
+| `Main.java`            | Java backend: DES/AES encryption, decryption, attack & avalanche logic |
+| `index.html`           | Full frontend layout and button interface                              |
+| `style.css`            | Custom CSS styles, themes, animations, layout                          |
+| `app.js`               | Node.js logic to run Java, update UI, preview files                    |
+| `plaintext.txt`        | Input text to encrypt                                                   |
+| `encrypt.txt`          | Ciphertext (after encryption)                                           |
+| `decrypt.txt`          | Result after decrypting `encrypt.txt`                                  |
+| `encrypt_Attack.txt`   | Corrupted version of ciphertext (simulated attack)                     |
+| `decrypt_Attack.txt`   | Result after decrypting the corrupted ciphertext                       |
+
+---
+
+## 🖼 Screenshots
+
+### 🧩 UI Panel Layout
+
+![Screenshot 1](screen1.png)  
+![Screenshot 2](screen2.png)  
+![Screenshot 3](screen3.png)  
+![Screenshot 4](screen4.png)  
+![Screenshot 5](screen5.png)
+
+> *Each screenshot highlights different parts of the simulation, from encryption to attack results.*
+
+---
+
+## 📚 Educational Purpose
+
+This project is made for:
+
+- 🎓 **Students** learning cryptography and information security
+- 🧑‍🏫 **Teachers** wanting to visually demonstrate encryption behavior
+- 👨‍💻 **Developers** interested in Java crypto and frontend-crypto integration
+
+### You will learn:
+
+- 🔐 How encryption & decryption actually work (DES & AES)
+- ❌ What happens when ciphertext is modified (attack/integrity breach)
+- 🌪 How **Avalanche Effect** proves cryptographic diffusion
+- 📁 How to use **real-world file-based encryption workflows**
+
+
+## 👤 Author
+
+Created by **Kaushal Ramoliya**  
+📧 Email: [kaushalramoliya1@gmail.com](mailto:kaushalramoliya17@gmail.com)  
