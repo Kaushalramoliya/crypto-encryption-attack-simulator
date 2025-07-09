@@ -107,3 +107,5 @@ This project is made for:
 
 Created by **Kaushal Ramoliya**  
 📧 Email: [kaushalramoliya1@gmail.com](mailto:kaushalramoliya17@gmail.com)  
+🌐 LinkedIn: [linkedin.com/in/kaushalramoliya](https://www.linkedin.com/in/kaushalramoliya)  
+💻 GitHub: [github.com/kaushalramoliya](https://github.com/Kaushalramoliya) 
